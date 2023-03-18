@@ -1,0 +1,169 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.chat {
+	flex: 1;
+	display: none;
+	flex-direction: column;
+}
+
+.chat-header {
+	display: flex;
+	align-items: center;
+	background-color: #eee;
+	padding: 10px;
+}
+
+.chat-title {
+	font-size: 24px;
+	font-weight: bold;
+	flex: 1;
+}
+
+.chat-user {
+	margin-right: 10px;
+}
+
+.chat-avatar {
+	position: relative;
+}
+
+.chat-avatar img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.chat-avatar button {
+	position: absolute;
+	top: 50%;
+	right: -10px;
+	transform: translateY(-50%);
+}
+
+.chat-logout button {
+	margin-left: 10px;
+}
+
+.chat-messages {
+	flex: 1;
+	overflow-y: scroll;
+	padding: 10px;
+}
+
+.chat-messages p {
+	margin: 0;
+}
+
+.chat-input {
+	display: flex;
+	align-items: center;
+	background-color: #eee;
+	padding: 10px;
+}
+
+.chat-input input[type="text"] {
+	flex: 1;
+	margin-right: 10px;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.login form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.login h2 {
+	margin-top: 0;
+}
+
+.login label {
+	margin-top: 10px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.login button {
+	padding: 5px 10px;
+	background-color: #eee;
+	border: none;
+	cursor: pointer;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.overlay-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.overlay h2 {
+	margin-top: 0;
+}
+
+.overlay label {
+	display: block;
+	margin-top: 10px;
+}
+
+.overlay input[type="text"] {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.overlay button {
+	padding: 5px 10px;
+	background-color: #eee;
+	border: none;
+	cursor: pointer;
+}
+
+.overlay button[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+}
+
+.overlay button[type="submit"]:hover {
+	background-color: #0069d9;
+}
+
+.overlay button#cancel-avatar {
+	margin-top: 10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Chat Room</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="chat">
+			<div class="chat-header">
+				<div class="chat-title">Chat Room</div>
+				<div class="chat-user">Welcome, <span id="username"></span>!</div>
+				<div class="chat-avatar">
+					<img id="avatar" src="default-avatar.png">
+					<button id="change-avatar">Change Avatar</button>
+				</div>
+				<div class="chat-logout">
+					<button id="logout">Logout</button>
+				</div>
+			</div>
+			<div class="chat-messages" id="messages">
+			</div>
+			<div class="chat-input">
+				<input type="text" id="message-input">
+				<button id="send">Send</button>
+			</div>
+		</div>
+		<div class="login">
+			<form id="login-form">
+				<h2>Login</h2>
+				<label for="login-username">Username:</label>
+				<input type="text" id="login-username">
+				<label for="login-password">Password:</label>
+				<input type="password" id="login-password">
+				<button type="submit">Login</button>
+			</form>
+			<form id="register-form">
+				<h2>Register</h2>
+				<label for="register-username">Username:</label>
+				<input type="text" id="register-username">
+				<label for="register-password">Password:</label>
+				<input type="password" id="register-password">
+				<button type="submit">Register</button>
+			</form>
+		</div>
+	</div>
+	<div class="overlay" id="overlay">
+		<div class="overlay-content">
+			<h2>Change Avatar</h2>
+			<form id="avatar-form">
+				<label for="avatar-url">Avatar URL:</label>
+				<input type="text" id="avatar-url">
+				<button type="submit">Save</button>
+			</form>
+			<button id="cancel-avatar">Cancel</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
